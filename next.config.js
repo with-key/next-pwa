@@ -10,6 +10,7 @@ const config = {
 /** @type {import('next').NextConfig} */
 const nextConfig = withPWA({
   dest: "public",
+  customWorkerDir: "src/worker",
   // disable: !isProduction,
   runtimeCaching: [], // 빈배열을 넣으면 기본값 설정
   // runtimeCaching: runtimeCaching,
